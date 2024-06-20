@@ -1,0 +1,64 @@
+/* GOTOP */
+ 
+.go-top-container {
+    position: fixed;
+    bottom: 64px;
+    right: 64px;
+    width: 105.6px;
+    height: 105.6px;
+    z-index: -1;
+}
+ 
+.go-top-button {
+    width: 0px;
+    height: 0px;
+    background: #009EB3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+ 
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: 0.2s;
+}
+ 
+.show {
+    z-index: 10;
+}
+ 
+.show .go-top-button {
+    animation: popup 0.3s ease-in-out;
+    width: 60px;
+    height: 60px;
+    z-index: 11;
+}
+ 
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+ 
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+    }
+    100% {
+         width: 60px;
+        height: 60px;
+    }
+}

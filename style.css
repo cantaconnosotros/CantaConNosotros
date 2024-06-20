@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header{
+	background-color: #FFFAF7;
+}
+
+.menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}
+
+.logo{
+	width: 120px;
+}
+
+.menu .navbar ul {
+	display: flex;
+}
+
+.menu .navbar > ul > li > a {
+	font-size: 18px;
+	padding: 0 20px;
+	color: #1B1B1D;
+	display: block;
+	font-weight: 600;
+}
+.menu .navbar > ul > li > a:hover {
+	color: #FF8400;
+}
+
+#menu{
+	display: none;
+}
+
+.menu-icono {
+	width: 25px;
+}
+
+.menu label {
+	cursor: pointer;
+	display: none;
+}
+
+.navbar ul li ul {
+	color: #1B1B1D;
+	font-size: 18px;
+	padding: 0 20px;
+	font-weight: 600;
+	position: absolute;
+	visibility: hidden;
+}
+
+.navbar ul li:hover ul {
+	visibility: visible;
+}
+
+.navbar a{
+	color:#1B1B1D ;
+	margin-left: 14px;
+
+}
+
+.navbar a:hover {
+	color:#FF8400 ;
+}
+
+.triangulo{
+	height: 10px;
+	margin-left: 3px;
+}
+
+
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 80px 0;
+}
+
+.header-txt {
+	flex-basis: 50%;
+	padding-right: 80px;
+}
+
+.header-txt h1 {
+	font-size: 50px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #1B1B1D;
+	margin-bottom: 15px;
+}
+
+.header-txt2 h1{
+	font-size: 50px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #1B1B1D;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.header-txt2 p{
+ padding: 10px;
+}
+
+p{
+	font-size: 18px;
+	color: #515151;
+	margin-bottom: 25px;
+}
+
+.btn-1{
+	display: inline-block;
+	padding: 10px 25px;
+	color: #FFFFFF;
+	background-color: #008C9E;
+	text-transform: uppercase;
+	border-radius: 25px;
+	font-size: 16px;
+}
+
+.btn-1:hover {
+	background-color: #009EB3;
+}
+
+.header-img {
+	flex-basis: 50%;
+}
+
+.services{
+	padding: 8px 0;
+	text-align: center;
+}
+
+h2{
+	color: #1B1B1D;
+	font-size: 40px;
+}
+.services-content{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.services-1{
+	flex-basis: calc(33.3% - 40px);
+}
+
+.services-1 img{
+	width: 50px;
+	margin-bottom: 10px;
+}
+
+.services-1 h3{
+	color: #1B1B1D;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.testimonio{
+	padding: 10px 25px;
+	padding-top: 50px;
+}
+
+.testimonio h2{
+	text-align: center;
+}
+
+.testimonio-content{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.testimonio-1{
+	flex-basis: calc(100% - 20px);
+	padding: 20px;
+	box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+	border-radius: 20px;
+}
+
+.testimonio-1 h3{
+	color: #1B1B1D;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: justify;
+	padding: 10px 25px;
+}
+
+.testimonio-1 p{
+	margin-bottom: 10px;
+	text-align: justify;
+	padding: 10px 25px;
+}
+
+.testimonio-img{
+	flex-basis: 30%;
+}
+
+.btn-2{
+	margin-left: 25px;
+	display: inline-block;
+	padding: 10px 25px;
+	color: #FFFFFF;
+	background-color: #008C9E;
+	text-transform: uppercase;
+	border-radius: 25px;
+	font-size: 16px;
+}
+
+.btn-2:hover {
+	background-color: #009EB3;
+}
+
+.products{
+	padding: 0 0 80px 0;
+	text-align: center;
+}
+
+.products img{
+	width: 150px;
+	height: 150px;
+}
+
+.products-content{
+	margin-top:50px ;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+}
+
+.products-1{
+	padding: 20px;
+}
+
+.products-1 h4{
+	color: #1B1B1D;
+	font-size: 22px;
+	margin-bottom:5px;
+}
+
+.products-1 p {
+	text-align: justify;
+}
+
+
+.footer{
+	padding: 50px 0;
+	border-top: 1px solid #B7B7B74A;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.footer-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-1{
+	display: flex;
+}
+
+.footer-1 p{
+	font-size: 16px;
+	color: #040404;
+	margin-right: 20px;
+}
+
+.social-link{
+	display: flex;
+}
+
+.social-link{
+	font-size: 20px;
+	color: #040404;
+	margin-right: 20px;
+}
+
+.social-link a:hover{
+	color: #FF8400;
+}
+
+.social-link a{
+	padding: 0 50px;
+	color: #1B1B1D;
+}
+
+.blog-content{
+	text-align: center;
+}
+
+.blog-container{
+	flex-basis: calc(100% - 30px);
+	box-shadow: 0 0 20px rgb(0, 0, 0, 0.2);
+	border-radius: 20px;
+}
+
+.blog-container{
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+.blog-img {
+	flex-basis: 40%;
+}
+
+.blog-img img{
+	width: 400px;
+	height: 400px;
+}
+
+.blog-txt{
+	padding: 30px 15px;
+	flex-basis: 50%;
+}
+
+.blog-txt p {
+	flex-basis: 50%;
+	padding-right: 80px;
+	text-align: justify;
+}
+
+.blog-txt h3 {
+	font-size: 25px;
+	text-align: justify;
+	line-height: 1.2;
+	text-transform: uppercase;
+	color: #1B1B1D;
+	margin-bottom: 15px;
+}
+
+.blog-txt h4 {
+	text-align: justify;
+	color: #1B1B1D;
+	margin-bottom: 15px;
+	line-height: 1.2;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+
+.blog-icono{
+	padding: 0 10px;
+}
+
+.head-blog{
+	text-align: center;
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+	.menu{
+		padding: 20px;
+		position: relative;
+	}
+
+	.menu label{
+		display: initial;
+	}
+
+	.menu .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color:#FFFFFF ;
+		display: none;
+	}
+
+	.menu .navbar ul{
+		flex-direction: column;
+	}
+
+	.menu .navbar ul li{
+		width: 100%;
+		padding: 20px 0;
+	}
+
+	.menu .navbar ul li a:hover{
+		color: #FF5A2C;
+	}
+
+	#menu:checked ~ .navbar{
+		display: initial;
+	}
+
+	.header-content{
+		padding: 30px;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.header-txt{
+		padding: 0 0 40px 0;
+	}
+
+	.services{
+		padding: 30px;
+	}
+
+	.services-content{
+		flex-direction:column;
+		margin-top: 20px;
+	}
+
+	.products{
+		padding: 30px;
+	}
+
+	.products-content{
+		margin-top: 30px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.testimonio{
+		padding: 30px;
+	}
+
+	.testimonio-content{
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	.footer{
+		padding: 30px;
+	}
+
+	.footer-content{
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+
